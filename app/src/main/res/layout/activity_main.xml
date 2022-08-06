@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="0.2"
+       >
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="#E0C197"
+           android:gravity="center"
+           android:text="CONTACT FORM"
+           android:textColor="@color/black"
+           android:textSize="20sp"
+           android:textStyle="bold" />
+
+   </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+      android:orientation="vertical"
+
+        >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+           android:background="@color/white"
+
+            >
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="0.4"
+                   android:orientation="vertical"
+                   >
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Name"
+                       android:textStyle="bold"
+                       android:textColor="@color/black"
+                       android:textSize="20sp"
+
+                       />
+
+                   <EditText
+
+                     android:id="@+id/namebtn"
+                       android:layout_marginTop="10dp"
+                       android:layout_marginRight="40dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="50dp"
+                       android:textColor="@color/black"
+                       android:textStyle="bold"
+
+                       android:background="@drawable/customedittext"
+                       android:drawableStart="@drawable/ic_name"
+                       android:drawablePadding="10dp"
+                      android:hint="Name"
+                       android:textColorHint="#808080"
+                       android:padding="10dp"
+
+                       />
+
+               </LinearLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/imgbtn"
+                        android:layout_width="300dp"
+                        android:layout_height="120dp"
+                        android:src="@drawable/avatar1"
+                        android:scaleType="centerCrop"
+
+                        />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:backgroundTint="@color/white"
+                        android:src="@drawable/ic_img"
+
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/imgChoicebtn"
+                        />
+                </RelativeLayout>
+
+            </TableRow>
+
+
+            <TableRow
+               android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+
+                        android:id="@+id/emailbtn"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+
+                        android:textColor="@color/black"
+
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/ic_email"
+                        android:drawablePadding="10dp"
+                        android:hint="Email"
+                        android:background="@drawable/customedittext"
+                        android:padding="10dp"
+                        android:textColorHint="#808080"
+                        />
+
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone (Home)"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        />
+
+                    <EditText
+                        android:id="@+id/phonebtn"
+
+                        android:layout_width="match_parent"
+
+                        android:layout_height="50dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:drawableStart="@drawable/ic_phone"
+                      android:drawablePadding="10dp"
+                        android:hint="Phone"
+                        android:background="@drawable/customedittext"
+                        android:padding="10dp"
+                        android:inputType="phone"
+                        android:textColorHint="#808080"
+                        />
+
+                </LinearLayout>
+
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="10dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone (Office)"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+
+
+                        />
+
+                    <EditText
+
+                        android:id="@+id/phoneOfficebtn"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/customedittext"
+                        android:drawableStart="@drawable/ic_phone"
+                        android:drawablePadding="10dp"
+                        android:hint="Phone"
+                        android:inputType="phone"
+                        android:padding="10dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textColorHint="#808080"/>
+
+                </LinearLayout>
+
+            </TableRow>
+
+
+
+        </TableLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        >
+
+           <Button
+               android:id="@+id/cancelbtn"
+               android:layout_width="0dp"
+               android:layout_height="match_parent"
+               android:layout_weight="1"
+               android:backgroundTint="@color/white"
+               android:text="Cancel"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:textSize="18sp"
+               />
+
+        <Button
+            android:id="@+id/savebtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="@color/white"
+            android:text="Save"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+
+
